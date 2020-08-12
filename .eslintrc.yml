@@ -1,0 +1,39 @@
+env:
+  browser: true
+  es6: true
+extends: 
+  - airbnb
+  - prettier
+  - prettier/react
+  - react-app
+globals: 
+  Atomics: readonly
+  SharedArrayBuffer: readonly
+parserOptions: 
+  ecmaFeatures:
+    jsx: true
+  ecmaVersion: 2018
+  sourceType: module
+plugins:
+  - react
+  - prettier
+rules:
+  prettier/prettier: 2
+  jsx-ally/href-no-hash: 0
+  react/jsx-filename-extension: 0
+  react/prefer-es6-class: 1
+  react/prop-types: 2
+  arrow-parens: 0
+  consistent-return: 2
+  prefer-destructuring: 
+    - 2
+    - object: true
+      array: false
+  react-hooks/exhaustive-deps: 1
+  import/no-named-as-default: 0
+  react/jsx-props-no-spreading:
+    -2
+    - html: false
+      custom: false
+
+  
